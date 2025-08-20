@@ -3,7 +3,7 @@ Gówniana/Testowa gra 2d z kradzonymi asetami na FOSS silniku Godot ( MIT ). Tes
 
 # Nazwa projektu
 
-"Testowa Gra o Rycerzu" to gówno gierka dla testów, aby się zapoznać z podstawowymi funkcjami silnika Godot oraz żeby umieć wystawiać na Open Source licencjach na repozytoria typu Github, Gitlab itp. Kradzione asety, więc wstawiam linki skąd je zawinąłem. "Inspirowane" na podstawie poradników do Godota od polskiego twórcy, czyli HnyDEV https://www.youtube.com/@hnydev :)
+"Testowa Gra o Rycerzu" to gówno gierka dla testów, aby się zapoznać z podstawowymi funkcjami silnika Godot oraz żeby umieć wystawiać na Open Source licencjach na repozytoria typu Github, Gitlab itp. Kradzione asety, więc wstawiam linki skąd je zawinąłem. "Inspiracje" na podstawie poradników do Godota od polskiego twórcy, czyli [HnyDEV](https://www.youtube.com/@hnydev) :)
 
 ## Licencja
 
@@ -19,17 +19,33 @@ Dziękuję twórcom za udostępnienie darmowych zasobów!
 
 ## Uruchamianie gry
 
-WINDOWS:
-Pobierz katalog "testowa_gra_o_rycerzu-windows", następnie uruchom najcięższy plik, czyli "Testowa Gra o Rycerzu.exe", nie konsolowy "Testowa Gra o Rycerzu.console.exe", bo on służy do debugowania, nie plik "Testowa Gra o Rycerzu.pck", bo on zawiera asety i inne pliki które są potrzbne grze do uruchomienia. Ciesz się z grania, w coś co ci się znudzi po 20 sekundach :)
+### Windows:
 
-LINUX
+1. Pobierz katalog `testowa_gra_o_rycerzu-windows`.
+2. Uruchom najcięższy plik, czyli `Testowa Gra o Rycerzu.exe`.
+3. Nie uruchamiaj `Testowa Gra o Rycerzu.console.exe` (to tylko do debugowania).
+4. Nie ruszaj pliku `.pck` – zawiera asety potrzebne do uruchomienia gry.
+5. Graj i znudź się po 20 sekundach :)
+
+---
+
+### GNU/Linux
+
 Serio mam robić dla was poradnik? XD
 
-BSD
+---
+
+### BSD
+
 Sam nie wiem, nigdy nie korzystałem z tego :-)
 
-MacOS
+---
+
+### macOS
+
 Sprzedajcie swój sprzęt i kupcie prawdziwego kompa, a jak tak bardzo lubicie Unix to BSD zainstalujcie.
+
+---
 
 ## Kontakt
 
