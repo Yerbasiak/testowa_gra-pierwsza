@@ -19,7 +19,7 @@ Dziękuję twórcom za udostępnienie darmowych zasobów!
 
 ## Uruchamianie gry
 
-### Windows:
+### Windows
 
 1. Pobierz katalog `testowa_gra_o_rycerzu-windows`.
 2. Uruchom najcięższy plik, czyli `Testowa Gra o Rycerzu.exe`.
