@@ -20,8 +20,17 @@ Dziękuję twórcom za udostępnienie darmowych zasobów!
 ## Uruchamianie gry
 
 WINDOWS:
-Pobierz katalog "testowa_gra_o_rycerzu-windows", następnie uruchom najcięższy plik, czyli "Testowa Gra o Rycerzu.exe", nie konsolowy "Testowa Gra o Rycerzu.console.exe", bo on służy do debugowania, nie plik "Testowa Gra o Rycerzu.pck", bo on zawiera asety i inne pliki które są potrzbne grze do uruchomienia.
+Pobierz katalog "testowa_gra_o_rycerzu-windows", następnie uruchom najcięższy plik, czyli "Testowa Gra o Rycerzu.exe", nie konsolowy "Testowa Gra o Rycerzu.console.exe", bo on służy do debugowania, nie plik "Testowa Gra o Rycerzu.pck", bo on zawiera asety i inne pliki które są potrzbne grze do uruchomienia. Ciesz się z grania, w coś co ci się znudzi po 20 sekundach :)
+
+LINUX
+Serio mam robić dla was poradnik? XD
+
+BSD
+Sam nie wiem, nigdy nie korzystałem z tego :-)
+
+MacOS
+Sprzedajcie swój sprzęt i kupcie prawdziwego kompa, a jak tak bardzo lubicie Unix to BSD zainstalujcie.
 
 ## Kontakt
 
-Pisz tutaj albo na yerbak@tutamail.com
+Pisz tutaj na Githubie albo na yerbak@tutamail.com
