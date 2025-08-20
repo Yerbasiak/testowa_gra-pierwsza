@@ -3,7 +3,7 @@ Gówniana/Testowa gra 2d z kradzonymi asetami na FOSS silniku Godot ( MIT ). Tes
 
 # Nazwa projektu
 
-"Testowa Gra o Rycerzu" to gówno gierka dla testów, aby się zapoznać z podstawowymi funkcjami silnika Godot oraz żeby umieć wystawiać na Open Source licencjach na repozytoria typu Github, Gitlab itp. Kradzione asety, więc wstawiam linki skąd je zawinąłem.
+"Testowa Gra o Rycerzu" to gówno gierka dla testów, aby się zapoznać z podstawowymi funkcjami silnika Godot oraz żeby umieć wystawiać na Open Source licencjach na repozytoria typu Github, Gitlab itp. Kradzione asety, więc wstawiam linki skąd je zawinąłem. "Inspirowane" na podstawie poradników do Godota od polskiego twórcy, czyli HnyDEV https://www.youtube.com/@hnydev :)
 
 ## Licencja
 
