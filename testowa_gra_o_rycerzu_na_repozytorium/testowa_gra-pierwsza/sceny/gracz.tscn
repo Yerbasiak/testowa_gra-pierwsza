@@ -1,0 +1,170 @@
+[gd_scene load_steps=23 format=3 uid="uid://dwibj5u00j2we"]
+
+[ext_resource type="Texture2D" uid="uid://dsxob7jxkmhcw" path="res://asety/tilesety/gracz/Run.png" id="1_8in0d"]
+[ext_resource type="Script" uid="uid://yh4eyv0douny" path="res://skrypty/gracz.gd" id="1_l1edu"]
+[ext_resource type="Texture2D" uid="uid://prk0lygyo6sd" path="res://asety/tilesety/gracz/Combat Ready Idle.png" id="2_l1edu"]
+[ext_resource type="Texture2D" uid="uid://ddopt2uxvthgb" path="res://asety/tilesety/gracz/Jump.png" id="3_oap5v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yoavk"]
+atlas = ExtResource("1_8in0d")
+region = Rect2(0, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xr68n"]
+atlas = ExtResource("1_8in0d")
+region = Rect2(22, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41j5y"]
+atlas = ExtResource("1_8in0d")
+region = Rect2(44, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fggid"]
+atlas = ExtResource("1_8in0d")
+region = Rect2(66, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hi6mn"]
+atlas = ExtResource("1_8in0d")
+region = Rect2(88, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxf87"]
+atlas = ExtResource("1_8in0d")
+region = Rect2(110, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7ph3"]
+atlas = ExtResource("2_l1edu")
+region = Rect2(0, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3me7c"]
+atlas = ExtResource("2_l1edu")
+region = Rect2(22, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3072"]
+atlas = ExtResource("2_l1edu")
+region = Rect2(44, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0a07"]
+atlas = ExtResource("2_l1edu")
+region = Rect2(66, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfixp"]
+atlas = ExtResource("2_l1edu")
+region = Rect2(88, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhc2d"]
+atlas = ExtResource("3_oap5v")
+region = Rect2(0, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1bix"]
+atlas = ExtResource("3_oap5v")
+region = Rect2(22, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3bxcb"]
+atlas = ExtResource("3_oap5v")
+region = Rect2(44, 0, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kc5j"]
+atlas = ExtResource("3_oap5v")
+region = Rect2(66, 0, 22, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uccuj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yoavk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xr68n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41j5y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fggid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hi6mn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxf87")
+}],
+"loop": true,
+"name": &"bieganie",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7ph3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3me7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l3072")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0a07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfixp")
+}],
+"loop": true,
+"name": &"domyślne",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhc2d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1bix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3bxcb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kc5j")
+}],
+"loop": true,
+"name": &"skok",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ms4l1"]
+size = Vector2(19, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1edu"]
+size = Vector2(19, 22)
+
+[node name="Gracz" type="CharacterBody2D"]
+script = ExtResource("1_l1edu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uccuj")
+animation = &"bieganie"
+autoplay = "domyślne"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_ms4l1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, 0)
+zoom = Vector2(1.8, 1.8)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_l1edu")
+
+[node name="Smierc_tekst" type="Label" parent="."]
+visible = false
+offset_left = -35.0
+offset_top = -60.0
+offset_right = 49.0
+offset_bottom = -11.0
+text = "Nie żyjesz
+R = Restart"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
